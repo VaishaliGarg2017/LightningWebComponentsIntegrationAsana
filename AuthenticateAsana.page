@@ -1,0 +1,10 @@
+<!--Decription : this vf page is generated to help authenticate salesforce with asana -->
+<apex:page standardController="Account" extensions="AsanaWebService" sidebar="false">
+    <center>
+    <apex:form >
+        <apex:commandButton value="Ask for Authentication from Asana " action="{!ReturnCodeValue}" />
+        <apex:commandButton value="Perform Apex operation in Asana" action="{!ReturnAccessToken}" /> 
+        <apex:inputText value="{!AccessTokenValue}" label="Access Token" ><b>Access Token</b> </apex:inputText>
+    </apex:form>  
+   </center> 
+</apex:page>
